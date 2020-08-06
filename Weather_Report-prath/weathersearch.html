@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Current Weather Information</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel='icon' href='images/weather.jpg'>
+        <link rel="stylesheet" href="weathersearch.css">
+        <style>
+        #mydiv{
+    
+        top: 50%;
+        left: 50%;
+   
+         }
+        </style>
+    </head>
+    <body>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+        <div class="jumbotron" style="margin-bottom: 0px; color: white; background-color: black;">
+            <h2 class="text-center" style="font-size: 50px; font-weight: 600;">Get Current Weather</h2>
+        </div>
+
+        <form class="details" action="weather.php" method="POST">
+            <h3>Enter City Name</h3>
+
+            <div class="form_input form-inline">
+                <input type="text" name="city" id="city" class="form-control" placeholder="City Name">
+                <button id="submitWeather" class="btn btn-primary" name="search">Search City</button>
+            </div>
+        </form>
+    </body>  
+</html>

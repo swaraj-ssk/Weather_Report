@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url("images/weather1.jpg") fixed no-repeat;
+    background-size: cover;
+}
+#rowDiv{
+    text-align: center;
+    width: 100%;
+
+}
+input[type="text"]{
+    height: 40px;
+    font-size: 20px;
+}
+
+#submitWeather{
+    margin-top: 5px;
+    height: 40px;
+    font-weight: bold;
+}
+.row {
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.form-inline {
+
+    flex-flow: row wrap;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.details{
+    position: absolute;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #e17a9bed;
+}
+.btn-primary {
+    color: #fff;
+    background-color: rgb(235 6 105 / 25%);
+    border-color: #581c1c;
+}
